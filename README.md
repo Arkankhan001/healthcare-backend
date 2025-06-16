@@ -23,36 +23,6 @@ This project is a backend system for a healthcare application built using Django
 - python-decouple
 - psycopg2-binary
 
-## 📁 Project Structureproject-root/
-
-Healthcare_Backend                   # Root folder
-├── core/                            # Main Django app
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py                    # Models: User, Patient, Doctor, Mapping
-│   ├── serializers.py               # DRF serializers for all models
-│   ├── views.py                     # DRF views / viewsets
-│   ├── urls.py                      # App-level routes (included in project urls)
-│   ├── tests.py
-│   └── migrations/
-│       └── __init__.py
-│       └── 0001_initial.py
-│       └── ...
-│
-├── healthcare/                      # Django project config folder
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py                  # Global settings (uses .env for secrets)
-│   ├── urls.py                      # Main router for API endpoints
-│   └── wsgi.py
-│
-├── manage.py                        # Django CLI entrypoint
-├── requirements.txt                 # Project dependencies
-├── .env.example                     # Sample env file (do not include real .env)
-├── README.md                        # Project documentation
-
-
 ## 🛠 Setup Instructions
 Follow the steps below to set up the project locally.
 
@@ -128,6 +98,5 @@ Value: Bearer <access_token>
 👤 Author
 Your Name: Arkankhan Pathan
 Email: arkankhanpathan008@gmail.com
-Submitted for: Backend Internship Assignment
 
 
