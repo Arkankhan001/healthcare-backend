@@ -60,33 +60,48 @@ python manage.py runserver
 
 📮 API Endpoints
 ⚠️ All routes (except register/login) require a valid Authorization: Bearer <access_token> header.
-✅ 1. Patient APIs
-Method	        Endpoint	          Description
-POST	    /api/patients/	        Create a patient
-GET	        /api/patients/	        List all patients
-GET	        /api/patients/<id>/	    Retrieve a patient
-PUT	        /api/patients/<id>/	    Update a patient
-DELETE	    /api/patients/<id>/	    Delete a patient
 
-✅ 2. Doctor APIs
-Method	       Endpoint	                Description
-POST	    /api/doctors/	           Create a doctor
-GET	        /api/doctors/	           List all doctors
-GET	        /api/doctors/<id>/	       Retrieve a doctor
-PUT	        /api/doctors/<id>/	       Update a doctor
-DELETE	     /api/doctors/<id>/	       Delete a doctor
+### ✅ Patient APIs
 
-✅ 3. Patient-Doctor Mapping APIs
-Method	            Endpoint	                  Description
-POST	        /api/mappings/	                Create a mapping
-GET	            /api/mappings/	                List all mappings
-GET	            /api/mappings/<patient_id>/	    List mappings for a patient
-DELETE	        /api/mappings/<id>/	            Delete a mapping
+| Method | Endpoint               | Description         |
+|--------|------------------------|---------------------|
+| POST   | `/api/patients/`       | Create a patient    |
+| GET    | `/api/patients/`       | List all patients   |
+| GET    | `/api/patients/<id>/`  | Retrieve a patient  |
+| PUT    | `/api/patients/<id>/`  | Update a patient    |
+| DELETE | `/api/patients/<id>/`  | Delete a patient    |
 
-✅ 4. Authentication APIs
-Method	Endpoint	            Description
-POST	/api/auth/register/	    Register a user
-POST	/api/auth/login/	    Obtain JWT tokens
+---
+
+### ✅ Doctor APIs
+
+| Method | Endpoint              | Description         |
+|--------|-----------------------|---------------------|
+| POST   | `/api/doctors/`       | Create a doctor     |
+| GET    | `/api/doctors/`       | List all doctors    |
+| GET    | `/api/doctors/<id>/`  | Retrieve a doctor   |
+| PUT    | `/api/doctors/<id>/`  | Update a doctor     |
+| DELETE | `/api/doctors/<id>/`  | Delete a doctor     |
+
+---
+
+### ✅ Mapping APIs
+
+| Method | Endpoint                       | Description                    |
+|--------|--------------------------------|--------------------------------|
+| POST   | `/api/mappings/`               | Create a mapping               |
+| GET    | `/api/mappings/`               | List all mappings              |
+| GET    | `/api/mappings/<patient_id>/`  | List mappings for a patient    |
+| DELETE | `/api/mappings/<id>/`          | Delete a mapping               |
+
+---
+
+### ✅ Auth APIs
+
+| Method | Endpoint              | Description       |
+|--------|-----------------------|-------------------|
+| POST   | `/api/auth/register/` | Register a user   |
+| POST   | `/api/auth/login/`    | Login and get JWT |
 
 🧪 API Testing with Postman
 1.	Use /api/auth/register/ and /api/auth/login/ to register and obtain an access token
